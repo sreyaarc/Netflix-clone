@@ -3,7 +3,6 @@ const apiKey = process.env.REACT_APP_API_KEY;
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${apiKey}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${apiKey}&with_networks=213`,
-    // fetchNetflixOriginals: `/network/213?api_key=${apiKey}&language=en-US`,
     fetchTopRated: `/movie/top_rated?api_key=${apiKey}&language=en-US`,
     fetchActionMovies: `/discover/movie?api_key=${apiKey}&with_genres=28`,
     fetchAdventureMovies: `/discover/movie?api_key=${apiKey}&with_genres=12`,
