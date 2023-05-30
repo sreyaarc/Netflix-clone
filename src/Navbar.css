@@ -1,0 +1,21 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.navBar_scroll {
+    background-color: #111;
+    transition: all 0.5s ease-in;
+}
+.netflixLogo {
+    width: 145px;
+    object-fit: contain;
+}
+.netflixUserLogo {
+    margin-right: 30px;
+    width: 26px;
+    object-fit: contain;
+}
