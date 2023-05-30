@@ -12,6 +12,7 @@ function Row(props) {
             const request = await axios.get(props.fetchURL)   // axios appends this url to the baseurl
             // console.log(request);   request.data.results gives all the information about the movies
             setMovies(request.data.results);
+            return request;
         };
         fetchData();
 
