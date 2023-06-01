@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+    color: white;
+    font-family:'EB Garamond', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerImg {
+    width: 100px;
+    object-fit: contain;
+}
