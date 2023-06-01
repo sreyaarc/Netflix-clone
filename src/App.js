@@ -2,6 +2,7 @@ import Row from "./Row";
 import requests from "./requests";
 import Banner from "./Banner";
 import NavBar from "./Navbar";
+import Footer from "./Footer";
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals}  isFirstRow={true} />
+      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals}  isFirstRow={true} isFirstH2={true} />
       <Row title="Trending Now" fetchURL={requests.fetchTrending}/>
       <Row title="Top Rated" fetchURL={requests.fetchTopRated} />
       <Row title="Action Movies" fetchURL={requests.fetchActionMovies} />
@@ -22,6 +23,7 @@ function App() {
       <Row title="Drama Movies" fetchURL={requests.fetchDramaMovies} />
       <Row title="Documentaries" fetchURL={requests.fetchDocumentaryMovies} />
       <Row title="TV Shows" fetchURL={requests.fetchTVShows} />
+      <Footer />
     </div>
   );
 }
