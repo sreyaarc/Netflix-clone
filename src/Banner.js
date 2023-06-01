@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "./axios";
 import requests from "./requests";
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import InfoIcon from '@mui/icons-material/Info';
 import "./banner.css";
 
 
@@ -40,8 +42,8 @@ export default function Banner(props) {
 
                 {/* div with 2 buttons */}
                 <div className="bannerButtons">
-                    <button className="bannerBtn">Play</button>
-                    <button className="bannerBtn">My List</button>
+                    <button className="bannerBtn"><div className="btnDiv"><PlayCircleOutlineIcon /> <span>Play</span></div></button>
+                    <button className="bannerBtn"><div className="btnDiv"><InfoIcon /> <span>More Info</span></div></button>
                 </div>
 
                 {/* p -> description */}
