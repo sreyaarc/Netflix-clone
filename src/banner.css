@@ -33,7 +33,15 @@
     color: #000;
     background-color: #e6e6e6;
 }
+.btnDiv {
+    display: flex;
+    align-items: center;
+}
+.btnDiv span {
+    margin-left: 4px;
+}
 .fadeBottom {
-    height: 7.4rem;
+    /* height: 7.4rem; */
+    height: 8rem;
     background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
 }
